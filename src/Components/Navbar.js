@@ -16,7 +16,7 @@ const Navbar = () =>{
                     <Link className="nav-link " aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/"><i className="fa-solid fa-cart-shopping cart-icon" ></i><span className="cart-span">0</span></Link>
+                        <Link className="nav-link" to="/cart"><i className="fa-solid fa-cart-shopping cart-icon" ></i><span className="cart-span">0</span></Link>
                         
                     </li>
                 </ul>
