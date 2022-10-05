@@ -1,0 +1,28 @@
+
+
+.navbar-brand{
+    color: #ff6e68 !important;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.nav-link{
+    font-weight: 600;
+    position: relative;
+}
+.cart-icon{
+    color: #ff6e68;
+   
+}
+.nav-link span{
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    top: -.5rem;
+    left: 1.3rem;
+}
