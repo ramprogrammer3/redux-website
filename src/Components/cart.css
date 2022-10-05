@@ -1,0 +1,15 @@
+
+
+.cart-image{
+    width: 50px;
+    height: 50px;
+}
+
+th, td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.remove-item{
+    cursor: pointer;
+}

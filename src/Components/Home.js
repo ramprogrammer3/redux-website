@@ -1,7 +1,8 @@
 import Header from "./Header";
 import {useSelector} from 'react-redux'
+import currencyFormatter from 'currency-formatter';
+import { Link } from "react-router-dom";
 import './home.css';
-var currencyFormatter = require('currency-formatter');
 const Home = () =>{
     const {products} = useSelector((state)=>state.ProductReducer)
     console.log(products)
@@ -14,8 +15,9 @@ const Home = () =>{
                         products.map((item,i)=>(
                             <div className="col-md-3  " key={i}>
                             <div className="shadow p-2 mb-3 card" >
-                                <div className="product-image">
-                                    <img className="img-fluid " src={item.image} alt="not available" />
+
+                                <div className="product-image"> 
+                                    <Link to= {`/details/${item.id}`}><img className="img-fluid " src={item.image} alt="not available" /></Link>
                                 </div>
                                 <div className="content ps-3">
                                     <p> Product Name : <b>{item.name} </b> </p>
